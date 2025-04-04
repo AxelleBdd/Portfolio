@@ -30,8 +30,9 @@ header {
   width: 35px;
   height: 5px;
   background-color: #e6e8e8;
+  border-radius: 5px;
   margin: 6px 0;
-  display: block;  
+  display: block;
 }
 
 body {
@@ -68,7 +69,7 @@ h6 {
 
 p {
   text-align: justify;
-  background-color: #065a50a3;
+  background-color: #065a5049;
   border-radius: 1em;
   padding: 1em;
   font-size: large;
@@ -83,13 +84,48 @@ p {
 
 .aPropos {
   display: flex;
-  margin-top: 20em;
+  padding-top: 7em;
   margin: 10em;
 }
 
-img {
+.aPropos img {
   max-width: 30%;
-  height: 25em;
+  height: 23em;
   border-radius: 4em;
-  display: flex
+  display: flex;
+}
+
+.formation {
+  padding-top: 7em;
+  display: flex;
+}
+
+.fomationDisplay {
+  min-width: 35%;
+  margin-left: 10em;
+  display: block;
+}
+
+.formationList {
+  text-align: justify;
+  background-color: #065a5049;
+  border-radius: 1em;
+  padding: 1em;
+  font-size: large;
+  min-width: 35%;
+}
+
+.formationList h4 {
+  margin-left: 2em;
+}
+
+.formationList h5 {
+  margin-left: 5em;
+}
+
+.formation img {
+  max-width: 100em;
+  display: flex;
+  margin-left: -20em;
+  margin-top: -12em;
 }
