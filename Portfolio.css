@@ -43,16 +43,40 @@ body {
   text-align: center;
 }
 
-h1 {
-  font-size: 4em;
-  margin-top: 3em;
+.container {
+  max-width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  max-width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+/*Section de la page d'accueil*/
+
+.accueil {
+  padding: 10%;
+}
+
+.pageAccueil h1 {
+  font-size: 6em;
   font-weight: 800;
 }
 
-h3 {
-  font-size: 2em;
+.pageAccueil h3 {
+  margin-top: -6%;
+  font-size: 4em;
   font-style: italic;
   font-weight: 400;
+}
+
+.pageAccueil h6 {
+  margin-top: 20%;
+  font-size: medium;
 }
 
 h2 {
@@ -60,11 +84,6 @@ h2 {
   font-style: normal;
   font-weight: 600;
   text-align: left;
-}
-
-h6 {
-  margin-top: 20em;
-  font-size: small;
 }
 
 p {
@@ -75,17 +94,18 @@ p {
   font-size: large;
 }
 
+/*Section de la page a propos*/
+.aPropos {
+  display: flex;
+  margin: 10%;
+  padding-top: 13%;
+}
+
 .aboutMe {
   display: block;
   max-width: 50%;
   margin-right: 10em;
   margin-bottom: 5em;
-}
-
-.aPropos {
-  display: flex;
-  padding-top: 7em;
-  margin: 10em;
 }
 
 .aPropos img {
@@ -95,12 +115,14 @@ p {
   display: flex;
 }
 
+/*Section de la page formation*/
 .formation {
-  padding-top: 7em;
   display: flex;
+  align-items: center;
 }
 
 .fomationDisplay {
+  margin-top: -5%;
   min-width: 35%;
   margin-left: 10em;
   display: block;
@@ -121,11 +143,42 @@ p {
 
 .formationList h5 {
   margin-left: 5em;
+  font-weight: 400;
 }
 
 .formation img {
-  max-width: 100em;
+  max-width: 75em;
   display: flex;
-  margin-left: -20em;
-  margin-top: -12em;
+  align-items: center;
+  margin-left: -10%;
 }
+
+/*Section de la page projets de groupe*/
+
+.projetGroupe {
+  padding-top: 10%;
+}
+
+.projetGroupe h2 {
+  margin-left: 3em;
+}
+
+.listeProjetGroupe {
+  padding-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.projet {
+  text-align: justify;
+  background-color: #065a5049;
+  border-radius: 1em;
+  padding: 1em;
+  font-size: large;
+  width: 20%;
+}
+
+/*Section de la page projets individuels*/
+
+/*Section de la page contact*/
