@@ -52,7 +52,7 @@ body {
 
 section {
   max-width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   scroll-snap-align: start;
 }
 
@@ -153,32 +153,97 @@ p {
   margin-left: -10%;
 }
 
-/*Section de la page projets de groupe*/
+/*Section de la page projets*/
 
-.projetGroupe {
-  padding-top: 10%;
+.projetsDescription {
+  padding-top: 1%;
 }
 
-.projetGroupe h2 {
+.projetsDescription h2 {
   margin-left: 3em;
 }
 
-.listeProjetGroupe {
-  padding-top: 2%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+.listeProjet {
+  padding-top: 0.5%;
+  display: grid;
+  margin-left: 5%;
+  column-gap: 10%;
+  grid-template-columns: 40% 40%;
 }
 
 .projet {
-  text-align: justify;
   background-color: #065a5049;
   border-radius: 1em;
   padding: 1em;
   font-size: large;
-  width: 20%;
+  margin-bottom: 2%;
 }
 
-/*Section de la page projets individuels*/
+.projet h4 {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+.divProjet {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.projet h5 {
+  margin-top: 0.15em;
+  margin-bottom: 1em;
+}
+
+.divProjet .language{
+  display: flex;
+  margin-top: -0.25em;
+}
+
+.divProjet .language h4{
+  padding: 0.25em;
+  margin-left: 0.25em;
+  border-radius: 0.5em;
+  background-color: #065a50;
+}
+
+.projet img{
+  width: 40em;
+}
+
+dialog {
+  width: 40%;
+}
 
 /*Section de la page contact*/
+.contact {
+  padding: 5%;
+}
+.contact h1{
+  font-size: 5em;
+  font-weight: 700;
+}
+
+.contact a{
+  text-decoration: none;
+  color: #e6e8e8;
+  font-size: 3em;
+}
+
+.contact .liens {
+  align-content: center;
+}
+.contact img {
+  width: 15%;
+  margin: 5%;
+}
+
+.mail {
+  display: flex;
+  margin-top: 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.mailLogo{
+  max-width: 5%;
+  padding: 0;
+}
