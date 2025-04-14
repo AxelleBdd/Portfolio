@@ -193,16 +193,21 @@ p {
   margin-bottom: 1em;
 }
 
-.divProjet .language{
+dialog .language{
   display: flex;
+  max-height: 75px;
   margin-top: -0.25em;
 }
 
-.divProjet .language h4{
+dialog .language h4{
   padding: 0.25em;
   margin-left: 0.25em;
   border-radius: 0.5em;
   background-color: #065a50;
+}
+
+dialog .descriptionProjet {
+  text-align: left;
 }
 
 .projet img{
@@ -211,6 +216,8 @@ p {
 
 dialog {
   width: 40%;
+  display: flex;
+  font-size: larger;
 }
 
 /*Section de la page contact*/
