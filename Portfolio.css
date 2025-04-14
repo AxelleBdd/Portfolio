@@ -121,7 +121,7 @@ p {
   align-items: center;
 }
 
-.fomationDisplay {
+.formationDisplay {
   margin-top: -5%;
   min-width: 35%;
   margin-left: 10em;
@@ -154,6 +154,11 @@ p {
 }
 
 /*Section de la page projets*/
+
+.headerProjet {
+  display: flex;
+  justify-content: baseline;
+}
 
 .projetsDescription {
   padding-top: 1%;
@@ -195,19 +200,20 @@ p {
 
 dialog .language{
   display: flex;
+  margin-left: 30%;
   max-height: 75px;
   margin-top: -0.25em;
 }
 
 dialog .language h4{
   padding: 0.25em;
-  margin-left: 0.25em;
+  float: right;
   border-radius: 0.5em;
   background-color: #065a50;
 }
 
 dialog .descriptionProjet {
-  text-align: left;
+  float: left;
 }
 
 .projet img{
@@ -215,9 +221,10 @@ dialog .descriptionProjet {
 }
 
 dialog {
+  display: block;
   width: 40%;
-  display: flex;
   font-size: larger;
+  text-align: left;
 }
 
 /*Section de la page contact*/
@@ -253,4 +260,59 @@ dialog {
 .mailLogo{
   max-width: 5%;
   padding: 0;
+}
+
+
+/********Responsive
+*******************/
+
+@media screen AND (max-width:650px){
+  body{
+    max-width: 100wh;
+  }
+  p{
+  font-size: 16px;
+  }
+  .accueil {
+    font-size: 10px;
+    max-width: 100vw;
+  }
+  .aPropos {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .aPropos .aboutMe{
+    min-width: 100%;
+  }
+  .aPropos img {
+    min-width: 100%;
+    height: 20em;
+  }
+  .formationDisplay{
+    margin: 10%;
+  }
+  .formationList {
+    min-width: 80vw;
+    padding: 0.5em;
+    text-align: left;
+  }
+  .listeProjet {
+    max-width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .projet img {
+    width: 90vw;
+  }
+  dialog {
+    width: 80vw;
+    margin: 5%;
+    font-size: 14px;
+    margin-top: 20%;
+  }
+  dialog .language {
+    padding-bottom: 0.5em;
+    max-height: 3.5em;
+  }
 }
