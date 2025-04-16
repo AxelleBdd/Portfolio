@@ -14,34 +14,21 @@ let bouttonModaleTrois = document.querySelector('#closeModaleTrois');
 let bouttonModaleQuatre = document.querySelector('#closeModaleQuatre');
 
 // Déclaration des event listener
-burgerMenu.addEventListener("click", () => {
+// burgerMenu.addEventListener("click", () => {
     
-})
+// })
 
-imagePremierProjet.addEventListener("click", () => {
-    descriptionProjetUn.showModal();
-});
-bouttonModaleUn.addEventListener("click", () => {
-    descriptionProjetUn.close();
-})
+function creationModale(image, description, boutton){
+    image.addEventListener("click", () => {
+        description.display = "block"
+        description.showModal();
+    })
+    boutton.addEventListener("click", () => {
+        description.close();
+    })
+}
 
-imageDeuxiemeProjet.addEventListener("click", () => {
-    descriptionProjetDeux.showModal();
-});
-bouttonModaleDeux.addEventListener("click", () => {
-    descriptionProjetDeux.close();
-})
-
-imageTroisiemeProjet.addEventListener("click", () => {
-    descriptionProjetTrois.showModal();
-});
-bouttonModaleTrois.addEventListener("click", () => {
-    descriptionProjetTrois.close();
-})
-
-imageQuatriemeProjet.addEventListener("click", () => {
-    descriptionProjetQuatre.showModal();
-});
-bouttonModaleQuatre.addEventListener("click", () => {
-    descriptionProjetQuatre.close();
-})
+creationModale(imagePremierProjet, descriptionProjetUn, bouttonModaleUn)
+creationModale(imageDeuxiemeProjet, descriptionProjetDeux, bouttonModaleDeux)
+creationModale(imageTroisiemeProjet, descriptionProjetTrois, bouttonModaleTrois)
+creationModale(imageQuatriemeProjet, descriptionProjetQuatre, bouttonModaleQuatre)

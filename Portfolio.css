@@ -221,7 +221,6 @@ dialog .descriptionProjet {
 }
 
 dialog {
-  display: block;
   width: 40%;
   font-size: larger;
   text-align: left;
@@ -246,7 +245,7 @@ dialog {
   align-content: center;
 }
 .contact img {
-  width: 15%;
+  width: 7%;
   margin: 5%;
 }
 
@@ -258,7 +257,7 @@ dialog {
 }
 
 .mailLogo{
-  max-width: 5%;
+  max-width: 4%;
   padding: 0;
 }
 
