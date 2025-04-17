@@ -115,6 +115,11 @@ p {
   display: flex;
 }
 
+.competences {
+  display: flex;
+  padding: 3em;
+}
+
 /*Section de la page formation*/
 .formation {
   display: flex;
