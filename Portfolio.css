@@ -1,3 +1,5 @@
+/* choix de la font */
+
 .red-hat-display-italic {
   font-family: "Red Hat Display", sans-serif;
   font-optical-sizing: auto;
@@ -18,6 +20,8 @@
   font-weight: 700;
   font-style: normal;
 }
+
+/* Global */
 
 header {
   position: fixed;
@@ -54,6 +58,7 @@ section {
   max-width: 100%;
   min-height: 100vh;
   scroll-snap-align: start;
+  justify-content: space-between;
 }
 
 /*Section de la page d'accueil*/
@@ -95,6 +100,7 @@ p {
 }
 
 /*Section de la page a propos*/
+
 .aPropos {
   display: flex;
   margin: 10%;
@@ -102,22 +108,35 @@ p {
 }
 
 .aboutMe {
-  display: block;
+  display: flex;
+  flex-direction: column;
   max-width: 50%;
   margin-right: 10em;
   margin-bottom: 5em;
 }
 
-.aPropos img {
+.photoAxelle {
   max-width: 30%;
   height: 23em;
   border-radius: 4em;
-  display: flex;
+  
 }
 
 .competences {
   display: flex;
+  flex-direction: column;
   padding: 3em;
+}
+
+.competences div {
+  display: flex;
+  flex-direction: row;
+}
+
+.competences div img {
+  max-height: 250px;
+  max-width: 250px;
+  border-radius: 0;
 }
 
 /*Section de la page formation*/

@@ -14,9 +14,9 @@ let bouttonModaleTrois = document.querySelector('#closeModaleTrois');
 let bouttonModaleQuatre = document.querySelector('#closeModaleQuatre');
 
 // Déclaration des event listener
-// burgerMenu.addEventListener("click", () => {
+burgerMenu.addEventListener("click", () => {
     
-// })
+})
 
 function creationModale(image, description, boutton){
     image.addEventListener("click", () => {
