@@ -1,3 +1,14 @@
-Hello World
+># 👥 Individual project
+>
+>💻 Create a portfolio website <br>
+>⏲️ Many hours outside of school
+>
 
-Ceci est un début de Portfolio
+># 📚 Used stack
+>
+>🌐 JavaScript CSS HTML
+>
+
+># 🚦 Status
+>
+>⏸️ Project on hold
